@@ -76,7 +76,8 @@ fars_read_years <- function(years) {
 #' colunms. It uses \code{\link{fars_read_years}} function.
 #' @export
 #'
-#' @importFrom dplyr bind_rows group_by summarize spread
+#' @importFrom dplyr bind_rows group_by summarize
+#' @importFrom tidyr spread
 #'
 #' @examples
 #' fars_summarize_years(c(2013, 2014))
