@@ -8,7 +8,7 @@
 #'   is relative to the current working directory, \code{getwd()}.
 #' @export
 #'
-#' @importFrom dplyr tbl_df
+#' @importFrom dplyr tbl_df %>%
 #' @importFrom readr read_csv
 #'
 #' @examples
@@ -35,8 +35,10 @@ fars_read <- function(filename) {
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(2013)
 #' make_filename("2013")
+#' }
 make_filename <- function(year) {
     year <- as.integer(year)
     sprintf("accident_%d.csv.bz2", year)
@@ -49,7 +51,7 @@ make_filename <- function(year) {
 #' @return a list of FARS data for the years in the parameter \code{years}
 #' @export
 #'
-#' @importFrom dplyr mutate select
+#' @importFrom dplyr mutate select %>%
 #'
 #' @examples
 #'   \dontrun{
@@ -79,7 +81,7 @@ fars_read_years <- function(years) {
 #' colunms. It uses \code{\link{fars_read_years}} function.
 #' @export
 #'
-#' @importFrom dplyr bind_rows group_by summarize
+#' @importFrom dplyr bind_rows group_by summarize %>%
 #' @importFrom tidyr spread
 #'
 #' @examples
@@ -105,7 +107,7 @@ fars_summarize_years <- function(years) {
 #' any accident in that year, it produces a message.
 #' @export
 #'
-#' @importFrom dplyr filter
+#' @importFrom dplyr filter %>%
 #' @importFrom maps map
 #' @importFrom graphics points
 #'

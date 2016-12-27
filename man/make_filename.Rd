@@ -20,7 +20,9 @@ Administration's Fatality Analysis Reporting System
 \href{http://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars}{Fatality Analysis Reporting System (FARS)}.
 }
 \examples{
+\dontrun{
 make_filename(2013)
 make_filename("2013")
+}
 }
 

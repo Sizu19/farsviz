@@ -18,8 +18,9 @@ returns a data frame table if the file exists, throws an error if the file
 Reads a file in table format and creates a data frame table from it.
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
-
+\dontrun{
+  fars_read("accident_2013.csv.bz2")
+}
 
 }
 

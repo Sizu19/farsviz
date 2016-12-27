@@ -17,7 +17,9 @@ colunms. It uses \code{\link{fars_read_years}} function.
 Monthly number of accidents in each year using the data from FARS data
 }
 \examples{
-fars_summarize_years(c(2013, 2014))
-fars_summarize_years(c("2013", "2014"))
+  \dontrun{
+    fars_summarize_years(c(2013, 2014))
+    fars_summarize_years(c("2013", "2014"))
+  }
 }
 

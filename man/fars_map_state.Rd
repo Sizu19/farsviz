@@ -20,8 +20,10 @@ any accident in that year, it produces a message.
 Draws the location of accidents in given state for a given year
 }
 \examples{
-fars_map_state(48, 2013)
-fars_map_state(48, 2014)
-fars_map_state(6, 2013)
+  \dontrun{
+    fars_map_state(48, 2013)
+    fars_map_state(48, 2014)
+    fars_map_state(6, 2013)
+  }
 }
 
