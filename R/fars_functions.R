@@ -52,6 +52,7 @@ make_filename <- function(year) {
 #' @export
 #'
 #' @importFrom dplyr mutate select %>%
+#' @importFrom stats setNames
 #'
 #' @examples
 #'   \dontrun{
@@ -83,6 +84,7 @@ fars_read_years <- function(years) {
 #'
 #' @importFrom dplyr bind_rows group_by summarize %>%
 #' @importFrom tidyr spread
+#' @importFrom stats setNames
 #'
 #' @examples
 #'   \dontrun{
